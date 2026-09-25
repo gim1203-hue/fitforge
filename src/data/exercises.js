@@ -1,0 +1,14 @@
+export const exercises = [
+  { id: 1, name: 'Goblet Squat', muscle: 'Legs', difficulty: 'Beginner', equipment: 'Dumbbell', icon: '🏋️', instructions: 'Hold one dumbbell at your chest, sit your hips back, then drive through your feet to stand.', sets: 3, reps: 12 },
+  { id: 2, name: 'Push-Up', muscle: 'Chest', difficulty: 'Beginner', equipment: 'Bodyweight', icon: '💪', instructions: 'Keep your body in a straight line, lower your chest with control, then press the floor away.', sets: 3, reps: 10 },
+  { id: 3, name: 'Romanian Deadlift', muscle: 'Legs', difficulty: 'Intermediate', equipment: 'Barbell', icon: '⚡', instructions: 'Hinge at your hips with a neutral spine, lower the bar close to your legs, then squeeze your glutes to stand.', sets: 4, reps: 8 },
+  { id: 4, name: 'One-Arm Row', muscle: 'Back', difficulty: 'Beginner', equipment: 'Dumbbell', icon: '🎯', instructions: 'Brace your torso, pull the dumbbell toward your hip, pause, and lower it slowly.', sets: 3, reps: 12 },
+  { id: 5, name: 'Overhead Press', muscle: 'Shoulders', difficulty: 'Intermediate', equipment: 'Dumbbell', icon: '🔥', instructions: 'Brace your core and press the weights overhead without arching your lower back.', sets: 3, reps: 10 },
+  { id: 6, name: 'Plank', muscle: 'Core', difficulty: 'Beginner', equipment: 'Bodyweight', icon: '⏱️', instructions: 'Keep your shoulders over your elbows and hold a straight line from head to heels.', sets: 3, reps: 30 },
+  { id: 7, name: 'Walking Lunge', muscle: 'Legs', difficulty: 'Intermediate', equipment: 'Bodyweight', icon: '🚶', instructions: 'Step forward, lower both knees with control, and push through the front foot into the next step.', sets: 3, reps: 12 },
+  { id: 8, name: 'Mountain Climber', muscle: 'Full Body', difficulty: 'Advanced', equipment: 'Bodyweight', icon: '⛰️', instructions: 'From a high plank, alternate driving your knees forward while keeping your hips stable.', sets: 4, reps: 20 },
+  { id: 9, name: 'Biceps Curl', muscle: 'Arms', difficulty: 'Beginner', equipment: 'Dumbbell', icon: '💪', instructions: 'Keep your elbows close to your sides, curl the weights up, and lower without swinging.', sets: 3, reps: 12 },
+  { id: 10, name: 'Lat Pulldown', muscle: 'Back', difficulty: 'Intermediate', equipment: 'Machine', icon: '🏋️', instructions: 'Pull the bar toward your upper chest while keeping your torso tall, then return slowly.', sets: 3, reps: 10 },
+  { id: 11, name: 'Glute Bridge', muscle: 'Legs', difficulty: 'Beginner', equipment: 'Bodyweight', icon: '🌉', instructions: 'Drive through your heels, lift your hips, squeeze your glutes, and lower with control.', sets: 3, reps: 15 },
+  { id: 12, name: 'Burpee', muscle: 'Full Body', difficulty: 'Advanced', equipment: 'Bodyweight', icon: '🚀', instructions: 'Squat down, move to a plank, complete a push-up, return to standing, and jump.', sets: 3, reps: 10 },
+]

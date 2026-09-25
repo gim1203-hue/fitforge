@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { useAuth } from '../hooks/useAuth'
 import './Header.css'
 
 const links = [
@@ -12,6 +13,7 @@ const links = [
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const { user, logOut } = useAuth()
   return (
     <header className="site-header">
       <div className="site-header__content">
@@ -20,7 +22,11 @@ function Header() {
           {links.map((link) => <NavLink key={link.to} className={({ isActive }) => `main-navigation__link ${isActive ? 'main-navigation__link--active' : ''}`} to={link.to} onClick={() => setMenuOpen(false)}>{link.label}</NavLink>)}
         </nav>
         <button className="menu-button" type="button" aria-expanded={menuOpen} aria-label="Toggle navigation" onClick={() => setMenuOpen((value) => !value)}><span /><span /><span /></button>
-        <div className="profile-button" aria-label="User profile">JD</div>
+        <div className="user-menu">
+          {user.photoURL ? <img className="profile-button" src={user.photoURL} alt={user.displayName || 'User profile'} referrerPolicy="no-referrer" /> : <div className="profile-button" aria-label="User profile">{user.displayName?.[0] || 'U'}</div>}
+          <div className="user-menu__details"><strong>{user.displayName}</strong><span>{user.email}</span></div>
+          <button className="sign-out-button" type="button" onClick={logOut}>Sign out</button>
+        </div>
       </div>
     </header>
   )
